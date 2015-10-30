@@ -1,0 +1,6 @@
+<div data-ng-controller="AppController">
+	<select ng-model="city" ng-options="city.location as city.cityName for city in cities" ng-init="city=''" data-ng-click="getWeather(city)">
+          <option value="">Select City</option>
+    </select>
+    <p>{{weather}}</p>
+</div>
